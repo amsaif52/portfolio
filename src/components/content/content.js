@@ -21,7 +21,7 @@ class Content extends React.Component {
                     <h2>Projects</h2>
                     <div className="borderPrj">
                         <div className="borderCont">
-                            <div className="title"><a href="https://www.gillette.com" href="_blank">Gillette - US</a></div>
+                            <div className="title"><a href="https://www.gillette.com" target="_blank">Gillette - US</a></div>
                             <div className="text"></div>
                             <ul className="stackText">
                                 <li>Big Commerce</li>
@@ -31,7 +31,7 @@ class Content extends React.Component {
                             </ul>
                         </div>
                         <div className="borderCont">
-                            <div className="title"><a href="https://shop.braun.com/" href="_blank">Shop Braun - US</a></div>
+                            <div className="title"><a href="https://shop.braun.com/" target="_blank">Shop Braun - US</a></div>
                             <div className="text"></div>
                             <ul className="stackText">
                                 <li>Big Commerce</li>
@@ -41,7 +41,7 @@ class Content extends React.Component {
                             </ul>
                         </div>          
                         <div className="borderCont">
-                            <div className="title"><a href="https://theartofshaving.com/" href="_blank">The Art of Shaving - US</a></div>
+                            <div className="title"><a href="https://theartofshaving.com/" target="_blank">The Art of Shaving - US</a></div>
                             <div className="text"></div>
                             <ul className="stackText">
                                 <li>Big Commerce</li>
@@ -51,7 +51,7 @@ class Content extends React.Component {
                             </ul>
                         </div>
                         <div className="borderCont">
-                            <div className="title"><a href="https://joyandglee.com/" href="_blank">Joy and Glee - US</a></div>
+                            <div className="title"><a href="https://joyandglee.com/" target="_blank">Joy and Glee - US</a></div>
                             <div className="text"></div>
                             <ul className="stackText">
                                 <li>Big Commerce</li>
@@ -61,7 +61,7 @@ class Content extends React.Component {
                             </ul>
                         </div>            
                         <div className="borderCont">
-                            <div className="title"><a href="https://ec30clean.com/" href="_blank">EC30 Clean - US</a></div>
+                            <div className="title"><a href="https://ec30clean.com/" target="_blank">EC30 Clean - US</a></div>
                             <div className="text"></div>
                             <ul className="stackText">
                                 <li>Big Commerce</li>
@@ -71,7 +71,7 @@ class Content extends React.Component {
                             </ul>
                         </div>
                         <div className="borderCont">
-                            <div className="title"><a href="https://www.gillettevenus.com/" href="_blank">Gillette Venus - US</a></div>
+                            <div className="title"><a href="https://www.gillettevenus.com/" target="_blank">Gillette Venus - US</a></div>
                             <div className="text"></div>
                             <ul className="stackText">
                                 <li>Big Commerce</li>
@@ -81,7 +81,7 @@ class Content extends React.Component {
                             </ul>
                         </div>            
                         <div className="borderCont">
-                            <div className="title"><a href="https://ondemand.gillette.ca/" href="_blank">Gillette - Canada</a></div>
+                            <div className="title"><a href="https://ondemand.gillette.ca/" target="_blank">Gillette - Canada</a></div>
                             <div className="text"></div>
                             <ul className="stackText">
                                 <li>Big Commerce</li>
@@ -91,7 +91,7 @@ class Content extends React.Component {
                             </ul>
                         </div>            
                         <div className="borderCont">
-                            <div className="title"><a href="https://joyshave.ca/" href="_blank">Joy and Glee - Canada</a></div>
+                            <div className="title"><a href="https://joyshave.ca/" target="_blank">Joy and Glee - Canada</a></div>
                             <div className="text"></div>
                             <ul className="stackText">
                                 <li>Big Commerce</li>
@@ -101,7 +101,7 @@ class Content extends React.Component {
                             </ul>
                         </div>         
                         <div className="borderCont">
-                            <div className="title"><a href="https://olspice.com/" href="_blank">Old Spice - US</a></div>
+                            <div className="title"><a href="https://olspice.com/" target="_blank">Old Spice - US</a></div>
                             <div className="text"></div>
                             <ul className="stackText">
                                 <li>Big Commerce</li>
@@ -111,7 +111,7 @@ class Content extends React.Component {
                             </ul>
                         </div>         
                         <div className="borderCont">
-                            <div className="title"><a href="https://shop.secret.com/" href="_blank">Shop Secret - US</a></div>
+                            <div className="title"><a href="https://shop.secret.com/" target="_blank">Shop Secret - US</a></div>
                             <div className="text"></div>
                             <ul className="stackText">
                                 <li>Big Commerce</li>
@@ -121,7 +121,7 @@ class Content extends React.Component {
                             </ul>
                         </div>         
                         <div className="borderCont">
-                            <div className="title"><a href="https://mybrisa.com/" href="_blank">Brisa - US</a></div>
+                            <div className="title"><a href="https://mybrisa.com/" target="_blank">Brisa - US</a></div>
                             <div className="text"></div>
                             <ul className="stackText">
                                 <li>Big Commerce</li>
@@ -131,7 +131,7 @@ class Content extends React.Component {
                             </ul>
                         </div>       
                         <div className="borderCont">
-                            <div className="title"><a href="https://crestwhitesmile.com/" href="_blank">Crest White Smile - US</a></div>
+                            <div className="title"><a href="https://crestwhitesmile.com/" target="_blank">Crest White Smile - US</a></div>
                             <div className="text"></div>
                             <ul className="stackText">
                                 <li>Big Commerce</li>
