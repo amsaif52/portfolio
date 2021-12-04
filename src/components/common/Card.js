@@ -9,20 +9,18 @@ function Card({ imgSrc, caseName, duration, role, bodyText, link }) {
       <div className="app-card-details">
         <div>
           <div>
-            <span>Case Study</span>
+            <span className="compress">Case Study</span>
             <span>- {caseName}</span>
           </div>
           <div>
-            <span>Duration</span>
+            <span className="compress">Duration</span>
             <span>- {duration}</span>
           </div>
           <div>
-            <span>Role</span>
+            <span className="compress">Role</span>
             <span>- {role}</span>
           </div>
-          <div>
-            About Case Study <span>- {bodyText}</span>
-          </div>
+          <div>About Case Study - {bodyText}</div>
         </div>
         <div>
           {link && (

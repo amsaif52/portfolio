@@ -14,7 +14,7 @@ function Header() {
   return (
     <header className="app-header">
       <div className="app-header-container">
-        <div ref={node}>
+        <div ref={node} className="app-menu-burger">
           <Burger open={open} setOpen={setOpen} />
           <Menu open={open} setOpen={setOpen} />
         </div>
@@ -42,21 +42,6 @@ function Header() {
               }
             >
               UX Design
-              <span>
-                <WhiteBow />
-              </span>
-            </NavLink>
-          </li>
-          <li className="app-menu-item">
-            <NavLink
-              to="/q-arts"
-              className={(navData) =>
-                navData.isActive
-                  ? "app-menu-text app-menu-active"
-                  : "app-menu-text hideBow"
-              }
-            >
-              Q-Arts
               <span>
                 <WhiteBow />
               </span>
