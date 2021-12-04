@@ -1,0 +1,87 @@
+import React from "react";
+import Logo from "../../assets/logo.png";
+import { NavLink } from "react-router-dom";
+import WhiteBow from "../common/WhiteBow";
+
+function Header() {
+  return (
+    <header className="app-header">
+      <div className="app-header-container">
+        <div className="app-logo">
+          <NavLink
+            to="/"
+            className={(navData) =>
+              navData.isActive ? "app-menu-active bitTop" : "hideBow bitTop"
+            }
+          >
+            <img src={Logo} alt="logo" />
+            <span>
+              <WhiteBow />
+            </span>
+          </NavLink>
+        </div>
+        <ul className="app-menu">
+          <li className="app-menu-item">
+            <NavLink
+              to="/ux-design"
+              className={(navData) =>
+                navData.isActive
+                  ? "app-menu-text app-menu-active"
+                  : "app-menu-text hideBow"
+              }
+            >
+              UX Design
+              <span>
+                <WhiteBow />
+              </span>
+            </NavLink>
+          </li>
+          <li className="app-menu-item">
+            <NavLink
+              to="/q-arts"
+              className={(navData) =>
+                navData.isActive
+                  ? "app-menu-text app-menu-active"
+                  : "app-menu-text hideBow"
+              }
+            >
+              Q-Arts
+              <span>
+                <WhiteBow />
+              </span>
+            </NavLink>
+          </li>
+          <li className="app-menu-item">
+            <NavLink
+              to="/about-me"
+              className={(navData) =>
+                navData.isActive
+                  ? "app-menu-text app-menu-active"
+                  : "app-menu-text hideBow"
+              }
+            >
+              About me
+              <span>
+                <WhiteBow />
+              </span>
+            </NavLink>
+          </li>
+          <li className="app-menu-item btn">
+            <NavLink
+              to="/contact-us"
+              className={(navData) =>
+                navData.isActive
+                  ? "app-menu-text app-menu-active"
+                  : "app-menu-text"
+              }
+            >
+              Say Hi!
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    </header>
+  );
+}
+
+export default Header;
