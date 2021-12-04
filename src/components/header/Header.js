@@ -2,11 +2,22 @@ import React from "react";
 import Logo from "../../assets/logo.png";
 import { NavLink } from "react-router-dom";
 import WhiteBow from "../common/WhiteBow";
+import Menu from "../Menu/Menu";
+import { useState, useRef } from "react";
+import { useOnClickOutside } from "../Hooks/hooks";
+import Burger from "../Burger/Burger";
 
 function Header() {
+  const [open, setOpen] = useState(false);
+  const node = useRef();
+  useOnClickOutside(node, () => setOpen(false));
   return (
     <header className="app-header">
       <div className="app-header-container">
+        <div ref={node}>
+          <Burger open={open} setOpen={setOpen} />
+          <Menu open={open} setOpen={setOpen} />
+        </div>
         <div className="app-logo">
           <NavLink
             to="/"

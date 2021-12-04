@@ -4,12 +4,8 @@ import Home from "./components/home/Home";
 import Design from "./components/design/Design";
 import EmployeeScape from "./components/employeeScape/EmployeeScape";
 import { Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
 
 function App() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <div className="app">
       <Header />

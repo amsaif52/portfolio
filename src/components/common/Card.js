@@ -20,7 +20,9 @@ function Card({ imgSrc, caseName, duration, role, bodyText, link }) {
             <span>Role</span>
             <span>- {role}</span>
           </div>
-          <div>About Case Study - {bodyText}</div>
+          <div>
+            About Case Study <span>- {bodyText}</span>
+          </div>
         </div>
         <div>
           {link && (
