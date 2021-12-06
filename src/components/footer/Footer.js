@@ -1,6 +1,5 @@
 import Linkedin from "../assets/Linkedin";
 import Facebook from "../assets/Facebook";
-import Twitter from "../assets/Twitter";
 import Instagram from "../assets/Instagram";
 
 function Footer() {

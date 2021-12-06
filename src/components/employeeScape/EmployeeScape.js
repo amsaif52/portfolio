@@ -25,6 +25,13 @@ import RightTable from "../../assets/rightTable.jpg";
 import GroupLow from "../../assets/groupLow.jpg";
 import Proto1 from "../../assets/proto1.jpg";
 import Proto2 from "../../assets/proto2.jpg";
+import DesignUnit from "../../assets/designUnit.jpg";
+import Sig from "../../assets/sig.jpg";
+import ColorInjection from "../../assets/colorInjection.jpg";
+import EmployeeScapeImage2 from "../../assets/employeeSign.jpg";
+import Family from "../../assets/family.jpg";
+import PrototypeVideo from "../../assets/Prototype.m4v";
+import { Player, ControlBar } from "video-react";
 import { Fade } from "react-reveal";
 
 function EmployeeScape() {
@@ -891,6 +898,217 @@ function EmployeeScape() {
         >
           View Prototype V3
         </a>
+      </Fade>
+      <Fade bottom duration={1000} distance="40px">
+        <div className="app-design-header">
+          <svg
+            width="59"
+            height="53"
+            viewBox="0 0 59 53"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M53 3.6543H37.4656C36.9601 3.6543 36.5518 4.06387 36.5518 4.56809V27.4129C36.5518 27.9171 36.9601 28.3267 37.4656 28.3267H53C53.5055 28.3267 53.9138 27.9171 53.9138 27.4129V4.56809C53.9138 4.06387 53.5055 3.6543 53 3.6543ZM38.3793 5.48188H52.0862V8.22326H38.3793V5.48188ZM52.0862 26.4991H38.3793V10.0508H52.0862V26.4991Z"
+              fill="#02005E"
+            />
+            <path
+              d="M40.207 11.8789H42.0346V13.7065H40.207V11.8789Z"
+              fill="#02005E"
+            />
+            <path
+              d="M43.8623 11.8789H50.2589V13.7065H43.8623V11.8789Z"
+              fill="#02005E"
+            />
+            <path
+              d="M40.207 15.5352H42.0346V17.3627H40.207V15.5352Z"
+              fill="#02005E"
+            />
+            <path
+              d="M43.8623 15.5352H50.2589V17.3627H43.8623V15.5352Z"
+              fill="#02005E"
+            />
+            <path
+              d="M40.207 19.1895H42.0346V21.017H40.207V19.1895Z"
+              fill="#02005E"
+            />
+            <path
+              d="M43.8623 19.1895H50.2589V21.017H43.8623V19.1895Z"
+              fill="#02005E"
+            />
+            <path
+              d="M40.207 22.8457H42.0346V24.6733H40.207V22.8457Z"
+              fill="#02005E"
+            />
+            <path
+              d="M43.8623 22.8457H50.2589V24.6733H43.8623V22.8457Z"
+              fill="#02005E"
+            />
+            <path
+              d="M33.8102 12.7922H26.4999V9.13706H27.4137C27.9191 9.13706 28.3275 8.72748 28.3275 8.22326V4.56809C28.3275 4.06387 27.9191 3.6543 27.4137 3.6543H23.7585C23.2531 3.6543 22.8447 4.06387 22.8447 4.56809V5.48188H10.0516V4.56809C10.0516 4.06387 9.64325 3.6543 9.13781 3.6543H5.48264C4.9772 3.6543 4.56885 4.06387 4.56885 4.56809V8.22326C4.56885 8.72748 4.9772 9.13706 5.48264 9.13706H6.39643V22.844H5.48264C4.9772 22.844 4.56885 23.2535 4.56885 23.7577V27.4129C4.56885 27.9171 4.9772 28.3267 5.48264 28.3267H9.13781C9.64325 28.3267 10.0516 27.9171 10.0516 27.4129V26.4991H22.8447V27.4129C22.8447 27.9171 23.2531 28.3267 23.7585 28.3267H27.4137C27.9191 28.3267 28.3275 27.9171 28.3275 27.4129V23.7577C28.3275 23.2535 27.9191 22.844 27.4137 22.844H26.4999V20.1026H33.8102C34.3157 20.1026 34.724 19.693 34.724 19.1888V13.706C34.724 13.2018 34.3157 12.7922 33.8102 12.7922ZM24.6723 5.48188H26.4999V7.30947H24.6723V5.48188ZM6.39643 5.48188H8.22402V7.30947H6.39643V5.48188ZM8.22402 26.4991H6.39643V24.6715H8.22402V26.4991ZM26.4999 26.4991H24.6723V24.6715H26.4999V26.4991ZM24.6723 22.844H23.7585C23.2531 22.844 22.8447 23.2535 22.8447 23.7577V24.6715H10.0516V23.7577C10.0516 23.2535 9.64325 22.844 9.13781 22.844H8.22402V9.13706H9.13781C9.64325 9.13706 10.0516 8.72748 10.0516 8.22326V7.30947H22.8447V8.22326C22.8447 8.72748 23.2531 9.13706 23.7585 9.13706H24.6723V12.7922H13.7068C13.2013 12.7922 12.793 13.2018 12.793 13.706V19.1888C12.793 19.693 13.2013 20.1026 13.7068 20.1026H24.6723V22.844ZM32.8964 18.275H14.6206V14.6198H15.5344V15.5336H17.362V14.6198H19.1895V16.4474H21.0171V14.6198H22.8447V15.5336H24.6723V14.6198H26.4999V16.4474H28.3275V14.6198H30.1551V15.5336H31.9826V14.6198H32.8964V18.275Z"
+              fill="#02005E"
+            />
+            <path
+              d="M56.6552 0H1.82759C0.819563 0 0 0.819563 0 1.82759V37.4655C0 38.4735 0.819563 39.2931 1.82759 39.2931H23.5779L22.0829 47.5172H19.1902C18.947 47.5172 18.7149 47.6131 18.544 47.7849L16.7164 49.6124C16.5447 49.7834 16.4488 50.0163 16.4488 50.2586V52.0862C16.4488 52.5904 16.8572 53 17.3626 53H41.1212C41.6267 53 42.035 52.5904 42.035 52.0862V50.2586C42.035 50.0163 41.9391 49.7834 41.7674 49.6124L39.9398 47.7849C39.7689 47.6131 39.5368 47.5172 39.2936 47.5172H36.4005L34.9054 39.2931H56.6558C57.6638 39.2931 58.4834 38.4735 58.4834 37.4655V1.82759C58.4834 0.819563 57.6638 0 56.6558 0H56.6552ZM1.82759 1.82759H56.6552V30.1552H1.82759V1.82759ZM40.2069 50.6367V51.1723H18.2759V50.6367L19.5678 49.3447H38.9152L40.2069 50.6367ZM34.543 47.5171H23.9399L25.4358 39.293H28.3289L28.3277 42.9482H27.4139V44.7758H31.0691V42.9482H30.1553L30.1561 39.293H33.0473L34.543 47.5171ZM56.6548 37.4654H1.82717V31.9827H56.6548V37.4654Z"
+              fill="#02005E"
+            />
+            <path
+              d="M26.5 33.8105H31.9828V35.6381H26.5V33.8105Z"
+              fill="#02005E"
+            />
+          </svg>
+          Design
+        </div>
+        <div className="sub-title">
+          Next I worked on <span>Branding</span> my application.
+        </div>
+        <div className="app-design-detail-text">
+          While I did my user testing I also tested out some of the potentional
+          application names. While I proposed these names, I would describe the
+          application using the following adjectives.
+        </div>
+        <div className="app-design-detail-text">
+          Calm | Confident | Responsible | Connected | Team Spirit | Open |
+          Evolving | Approachable | Welcoming
+        </div>
+        <div className="app-design-detail-text">
+          And out of all the options presented the highest voted name was
+          EmployeeScape.
+        </div>
+        <div className="app-design-cont-left-image">
+          <img
+            src={DesignUnit}
+            alt="mock1"
+            className="app-design-cont-left small"
+          />
+          <div className="app-design-cont-right">
+            <div>
+              The thought behond EmployeeScape was that it would represent an
+              Employee Landscape. A Landscape would ususally represent clear
+              visibilty, calmness, and often be considered in terms of their
+              aesthetic appeal. And those were the exact vibes I was aiming for
+              - Openess | clarity | calming | welcoming | approachable.
+            </div>
+            <div>
+              And since majority of our users connected to EmployeeScape, I
+              decided to go ahead with the same as the name for the applicaiton.{" "}
+            </div>
+          </div>
+        </div>
+        <div className="app-design-detail-text">
+          Next we created a Moodboard which was based on characterstic a large
+          organization should have. And the vibes it should typically give.
+        </div>
+        <div className="app-design-detail-text">
+          Creating the moodboard helped me explore my color palette and
+          typograpy as I could see the visuals and get inspired for the same.
+        </div>
+        <div className="app-design-cont">
+          <div className="app-design-cont-left">
+            <div>Click here to view the moodboard.</div>
+            <div>
+              Next we sketched out mutliple ideas for the wordmark. And finally
+              decided to go with a clear and simplistic look. We used the font
+              Mullish for the wordmark and highlighted the name by adding more
+              weight on the letter E and S.
+            </div>
+            <img src={EmployeeScapeImage2} alt="frame" className="imgCenter" />
+          </div>
+          <img
+            src={Sig}
+            alt="signtaure"
+            className="app-design-cont-right small"
+          />
+        </div>
+        <div className="app-design-detail-text">
+          Now was the fun yet challenging part -
+          <span className="big">Color Injection & Ambience.</span>
+        </div>
+        <div className="app-design-cont">
+          <div className="app-design-cont-left">
+            <div>
+              After passing all the previous tests, edits and design
+              refinements, we decided on our primary brand color.{" "}
+            </div>
+            <div>
+              We relied on the psychology of colors to make the final selection.
+              As per research the color blue associated with the following
+              adjectives, which are very similar to our brand adjectives.
+            </div>
+            <div>
+              They are : Calm | Comfort | Dignified Duty | Efficiency |
+              Intelligence | Successful | Trust | Security | Tranquility{" "}
+            </div>
+            <div>
+              Hence, that was a no brainer. However, deciding this particular
+              shade was the tough part for me.
+            </div>
+            <div>
+              We ultimately ended up deciding on Navy Blue, #02005E. It is dark
+              to be used in most high key situations and completely fits with
+              the brand image and feel.
+            </div>
+            <div>
+              As I selected our Primary brand color as Navy blue, I wanted the
+              secondary color to be a lighter shade and an accent color that
+              would compliment both primary and secondary color. Hence, the
+              finalised shades were #CBF0F8 - Light blue and #FF9179 - Coralistc
+              shade.{" "}
+            </div>
+          </div>
+          <img
+            src={ColorInjection}
+            alt="signtaure"
+            className="app-design-cont-right small"
+          />
+        </div>
+        <div className="app-design-cont">
+          <div className="app-design-cont-left">
+            <div>
+              Next we looked at the <span className="big">Typography</span>{" "}
+              aspect of the application.
+            </div>
+            <div>
+              We explored a variety of different fonts but finally decided to go
+              with Mullish as it is a minimalist Sans Serif typeface, designed
+              for both display and text typography.
+            </div>
+            <div>
+              I decided to go ahead with Mulish as the typography for multiple
+              reasons -<br />
+              <ul>
+                <li>It’s simplistic look and design.</li>
+                <li>It’s easy to read.</li>
+                <li>A familiar and recognizable font.</li>
+                <li>It’s eligible for both - screen and print use. </li>
+              </ul>
+            </div>
+          </div>
+          <img
+            src={Family}
+            alt="signtaure"
+            className="app-design-cont-right small"
+          />
+        </div>
+        <div className="app-design-detail-text">
+          And lastly, I developed{" "}
+          <span className="big">the Hi-Fi Prototype.</span>
+        </div>
+        <div className="app-prototype">
+          <div>
+            <Player autoPlay src={PrototypeVideo}>
+              <ControlBar autoHide={false} disableDefaultControls={true} />
+            </Player>
+          </div>
+          <a
+            href="https://www.figma.com/proto/gmLNVQFgouLCiOvrjYUrRN/CAPSTONE-EMPLOYEESCAPE?page-id=0%3A1&node-id=1%3A4433&viewport=241%2C48%2C0.36&scaling=scale-down&starting-point-node-id=1%3A4433"
+            className="app-design-detail-btn"
+            rel="noreferrer"
+            target="_blank"
+          >
+            View Prototype
+          </a>
+        </div>
       </Fade>
     </div>
   );

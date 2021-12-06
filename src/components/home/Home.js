@@ -1,7 +1,6 @@
 import Linkedin from "../assets/Linkedin";
 import Facebook from "../assets/Facebook";
 import Instagram from "../assets/Instagram";
-import Twitter from "../assets/Twitter";
 import Title from "../common/Title";
 import DisplayPicture from "../../assets/display_picture.jpg";
 import { Fade } from "react-reveal";

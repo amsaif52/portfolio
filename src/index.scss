@@ -410,9 +410,14 @@ $white: #fff;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 0 10px;
+  flex-wrap: wrap;
   > img {
     width: 100%;
     max-width: 450px;
+    @media screen and (max-width: 800px) {
+      max-width: 100%;
+    }
   }
   .app-define-testimonials {
     flex: 0 1 55%;
@@ -422,6 +427,9 @@ $white: #fff;
     flex-direction: column;
     > div {
       margin-bottom: 50px;
+    }
+    @media screen and (max-width: 800px) {
+      width: 100%;
     }
   }
   .app-define-text {
@@ -568,6 +576,11 @@ $white: #fff;
     > svg {
       margin-right: 20px;
     }
+    @media screen and (max-width: 800px) {
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+    }
   }
   .app-design-detail-container {
     padding: 0 146px;
@@ -583,17 +596,6 @@ $white: #fff;
         line-height: 30px;
         color: #000000;
       }
-    }
-  }
-  .app-prototype {
-    margin-top: 110px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    > img {
-      max-width: 700px;
-      width: 100%;
-      object-fit: contain;
     }
   }
   .app-design-focus-blue {
@@ -621,6 +623,7 @@ $white: #fff;
     color: #02005e;
     max-width: 1150px;
     margin: 0 auto 30px;
+    padding: 0 10px;
     > span {
       background-color: #cbf0f8;
     }
@@ -633,6 +636,7 @@ $white: #fff;
     color: #02005e;
     max-width: 1150px;
     margin: 0 auto 30px;
+    padding: 0 10px;
     &.small {
       text-align: right;
     }
@@ -647,14 +651,21 @@ $white: #fff;
       display: flex;
       justify-content: center;
       align-items: flex-start;
+      flex-wrap: wrap;
       > div {
         flex: 0 1 50%;
         margin-right: 15px;
+        @media screen and (max-width: 800px) {
+          flex: 1 1 100%;
+        }
       }
       > img {
         flex: 0 1 50%;
         width: 50%;
         position: relative;
+        @media screen and (max-width: 800px) {
+          flex: 1 1 100%;
+        }
       }
     }
     a {
@@ -672,6 +683,27 @@ $white: #fff;
   }
 }
 
+.app-prototype {
+  margin-top: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  > img,
+  > div {
+    max-width: 700px;
+    width: 100%;
+    object-fit: contain;
+    .video-react-big-play-button {
+      display: none;
+    }
+    .video-react {
+      padding-top: 0 !important;
+      margin-left: -100px;
+      transform: translateX(0);
+    }
+  }
+}
 a.imageSmall {
   position: absolute;
   bottom: -25px;
@@ -682,6 +714,10 @@ a.imageSmall {
   background-color: transparent;
   cursor: pointer;
   text-decoration: none;
+  @media screen and (max-width: 800px) {
+    position: relative;
+    bottom: 0;
+  }
 }
 .burger {
   position: absolute;
@@ -776,7 +812,11 @@ a.imageSmall {
   justify-content: space-between;
   align-items: flex-start;
   max-width: 1150px;
-  margin: 0 auto 80px;
+  margin: 0 auto 70px;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    padding: 0 10px;
+  }
   &.flexed {
     display: flex;
     justify-content: center;
@@ -789,12 +829,27 @@ a.imageSmall {
       font-weight: 400;
       margin-bottom: 20px;
       color: #02005e;
+      span.big {
+        background-color: #cbf0f8;
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+    ul {
+      margin-bottom: 0;
     }
   }
   .app-design-cont-right {
     padding-left: 60px;
     width: 100%;
     max-width: 670px;
+    &.small {
+      max-width: 340px;
+    }
+    @media screen and (max-width: 800px) {
+      padding-left: 0;
+      max-width: 100%;
+    }
   }
 }
 .app-design-cont-left-image {
@@ -803,6 +858,11 @@ a.imageSmall {
   align-items: flex-start;
   max-width: 1150px;
   margin: 0 auto 80px;
+  padding: 0 10px;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    padding: 0 10px;
+  }
   &.flexed {
     display: flex;
     justify-content: center;
@@ -821,11 +881,19 @@ a.imageSmall {
     padding-right: 60px;
     width: 100%;
     max-width: 670px;
+    &.small {
+      max-width: 340px;
+    }
+    @media screen and (max-width: 800px) {
+      padding-right: 0;
+      max-width: 100%;
+    }
   }
 }
 table.first {
   margin: auto;
   max-width: 1150px;
+  padding: 0 10px;
   margin: 0 auto 30px;
   th {
     text-align: left;
@@ -843,6 +911,7 @@ table.first {
 table.second {
   margin: auto;
   max-width: 1150px;
+  padding: 0 10px;
   margin: 0 auto 30px;
   th {
     text-align: left;
@@ -985,4 +1054,10 @@ table.second {
       color: #000;
     }
   }
+}
+.imgCenter {
+  max-width: 340px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
