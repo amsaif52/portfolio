@@ -1,7 +1,7 @@
 import Linkedin from "../assets/Linkedin";
 import Facebook from "../assets/Facebook";
 import Instagram from "../assets/Instagram";
-import Plane from "../../assets/plane.png";
+// import Plane from "../../assets/plane.png";
 import { Fade } from "react-reveal";
 const About = () => {
   return (
@@ -171,7 +171,7 @@ const About = () => {
             different Airlines.
           </div>
         </div>
-      </Fade>
+        {/* </Fade>
       <div className="plane-animation">
         <div className="holder">
           <img src={Plane} alt="plane" className="plane" />
@@ -210,7 +210,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Fade bottom duration={1000} distance="40px">
+      <Fade bottom duration={1000} distance="40px"> */}
         <div className="about-container noBottom">
           <div className="about-text">
             And that’s all about me for now. Thank you so much for taking the
