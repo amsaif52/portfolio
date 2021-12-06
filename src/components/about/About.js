@@ -38,38 +38,6 @@ const About = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  // const handleScroll = () => {
-  //   const planeOffsetTop = inputRef?.current?.offsetTop;
-  //   const planeOffsetTopHeight = inputRef?.current?.offsetHeight;
-  //   if (window.pageYOffset > planeOffsetTop) {
-  //     setIsScrollPlane(true);
-  //     if (
-  //       window.pageYOffset >
-  //       planeOffsetTop +
-  //         planeOffsetTopHeight -
-  //         inputPlaneRef?.current?.offsetHeight
-  //     ) {
-  //       setStartScroll({
-  //         postion: "absolute",
-  //         top:
-  //           planeOffsetTop +
-  //           planeOffsetTopHeight -
-  //           inputPlaneRef?.current?.offsetHeight,
-  //       });
-  //       return;
-  //     }
-  //     setStartScroll({
-  //       postion: "fixed",
-  //       top: 0,
-  //     });
-  //   } else {
-  //     setStartScroll({
-  //       postion: "absolute",
-  //       top: 0,
-  //     });
-  //   }
-  // };
-  // window.addEventListener("scroll", handleScroll);
   return (
     <>
       <Fade bottom duration={1000} distance="40px">
