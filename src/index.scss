@@ -855,3 +855,121 @@ table.second {
     }
   }
 }
+
+.about-container {
+  max-width: 1150px;
+  margin: 60px auto;
+  .about-title {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 400;
+    color: $primary;
+    margin-bottom: 40px;
+  }
+  .about-text {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    color: $primary;
+    margin-bottom: 20px;
+    &.highMargin {
+      margin-top: 96px;
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+  .about-list {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    color: $primary;
+    padding-left: 20px;
+    margin: 0 0 20px;
+  }
+  .about-cont-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .about-btn {
+    filter: drop-shadow(0px 4px 4px #4a306d);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 32px;
+    color: #000000;
+    background: #d2feea;
+    border-radius: 20px;
+    text-decoration: none;
+    max-width: 154px;
+    padding: 24px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    + .about-btn {
+      margin-left: 50px;
+    }
+  }
+  &.noBottom {
+    margin-bottom: 0;
+  }
+}
+.app-about-header {
+  background-color: rgba(74, 48, 109, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  line-height: 51px;
+  font-weight: 400;
+  color: $primary;
+  margin: 70px 0;
+  padding: 18px 0 10px;
+  > svg {
+    margin-right: 20px;
+  }
+}
+.plane-animation {
+  background: url("./assets/bckg-plane.jpg");
+  .holder {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding: 60px 0;
+    > div {
+      flex: 0 1 50%;
+    }
+  }
+  .plane {
+    position: absolute;
+    top: 0;
+    height: 300px;
+    left: 0;
+  }
+  .plane-balloon {
+    max-width: 800px;
+    padding: 20px;
+    margin-bottom: 64px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    .title {
+      font-size: 40px;
+      line-height: 42px;
+      font-weight: 400;
+      color: #000;
+      margin-bottom: 20px;
+    }
+    .sub-title {
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #000;
+    }
+  }
+}

@@ -15,8 +15,8 @@ const Menu = ({ open, ...props }) => {
       <a href="/ux-design" tabIndex={tabIndex}>
         UX Design
       </a>
-      <a href="/about-me" tabIndex={tabIndex}>
-        About me
+      <a href="/about" tabIndex={tabIndex}>
+        About
       </a>
     </div>
   );

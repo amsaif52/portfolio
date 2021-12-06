@@ -27,22 +27,29 @@ function Main() {
             </div>
             <ul className="main-hero-social">
               <li>
-                <a href="mailto:yakuta.izzy@gmail.com">
+                <a
+                  href="https://www.linkedin.com/in/yakutaizzy/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   <Linkedin fill="#4A306D" />
                 </a>
               </li>
               <li>
-                <a href="mailto:yakuta.izzy@gmail.com">
+                <a
+                  href="https://www.facebook.com/yakuta.merchant.1/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   <Facebook fill="#4A306D" />
                 </a>
               </li>
               <li>
-                <a href="mailto:yakuta.izzy@gmail.com">
-                  <Twitter fill="#4A306D" />
-                </a>
-              </li>
-              <li>
-                <a href="mailto:yakuta.izzy@gmail.com">
+                <a
+                  href="https://www.instagram.com/qartsbyyakuta/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   <Instagram fill="#4A306D" />
                 </a>
               </li>

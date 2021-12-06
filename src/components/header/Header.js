@@ -49,14 +49,14 @@ function Header() {
           </li>
           <li className="app-menu-item">
             <NavLink
-              to="/about-me"
+              to="/about"
               className={(navData) =>
                 navData.isActive
                   ? "app-menu-text app-menu-active"
                   : "app-menu-text hideBow"
               }
             >
-              About me
+              About
               <span>
                 <WhiteBow />
               </span>

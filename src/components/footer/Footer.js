@@ -13,22 +13,29 @@ function Footer() {
         </div>
         <ul className="app-footer-social">
           <li>
-            <a href="mailto:yakuta.izzy@gmail.com">
+            <a
+              href="https://www.linkedin.com/in/yakutaizzy/"
+              rel="noreferrer"
+              target="_blank"
+            >
               <Linkedin />
             </a>
           </li>
           <li>
-            <a href="mailto:yakuta.izzy@gmail.com">
+            <a
+              href="https://www.facebook.com/yakuta.merchant.1/"
+              rel="noreferrer"
+              target="_blank"
+            >
               <Facebook />
             </a>
           </li>
           <li>
-            <a href="mailto:yakuta.izzy@gmail.com">
-              <Twitter />
-            </a>
-          </li>
-          <li>
-            <a href="mailto:yakuta.izzy@gmail.com">
+            <a
+              href="https://www.instagram.com/qartsbyyakuta/"
+              rel="noreferrer"
+              target="_blank"
+            >
               <Instagram />
             </a>
           </li>
