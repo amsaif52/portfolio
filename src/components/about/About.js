@@ -15,9 +15,15 @@ const About = () => {
             select any of the below to know more.
           </div>
           <ul className="about-list">
-            <li>New Beginnings with UX Design.</li>
-            <li>Passion and love filled side hustle, Q-Arts.</li>
-            <li>An Eventful decade with Aviation.</li>
+            <li>
+              <a href="#one">New Beginnings with UX Design.</a>
+            </li>
+            <li>
+              <a href="#two">Passion and love filled side hustle, Q-Arts.</a>
+            </li>
+            <li>
+              <a href="#three">An Eventful decade with Aviation.</a>
+            </li>
           </ul>
           <div className="about-text">
             I would love to connect with you, so please do say Hi!
@@ -55,7 +61,9 @@ const About = () => {
         </div>
       </Fade>
       <Fade bottom duration={1000} distance="40px">
-        <div className="app-about-header">New Beginnings with UX Design.</div>
+        <div className="app-about-header" id="one">
+          New Beginnings with UX Design.
+        </div>
         <div className="about-container">
           <div className="about-text">
             While I was looking for multiple different career options, my
@@ -103,7 +111,7 @@ const About = () => {
         </div>
       </Fade>
       <Fade bottom duration={1000} distance="40px">
-        <div className="app-about-header">
+        <div className="app-about-header" id="two">
           Passion and Love filed side hustle, Q-Arts!
         </div>
         <div className="about-container">
@@ -149,7 +157,7 @@ const About = () => {
         </div>
       </Fade>
       <Fade bottom duration={1000} distance="40px">
-        <div className="app-about-header">
+        <div className="app-about-header" id="three">
           An Eventful decade with Aviation.
         </div>
         <div className="about-container noBottom">

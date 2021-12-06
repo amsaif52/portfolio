@@ -1129,7 +1129,7 @@ function EmployeeScape() {
         </div>
         <div className="app-prototype marginBtm">
           <div>
-            <Player autoPlay src={PrototypeVideo}>
+            <Player autoPlay loop src={PrototypeVideo}>
               <ControlBar autoHide={false} disableDefaultControls={true} />
             </Player>
           </div>
@@ -1212,7 +1212,7 @@ function EmployeeScape() {
           <li>
             <img src={Desktopv3} alt="desktop" />
             <a
-              href
+              href="https://www.figma.com/proto/SrDJoUah3HnV1zQxd36Mc6/EmployeeScape---Marketing-Website?page-id=85%3A627&node-id=85%3A629&viewport=241%2C48%2C0.05&scaling=min-zoom&starting-point-node-id=85%3A629"
               rel="noreferrer"
               target="_blank"
               className="app-design-detail-btn general"
@@ -1223,7 +1223,7 @@ function EmployeeScape() {
           <li className="marginLeft">
             <img src={Mobilev3} alt="mobile" className="mobile" />
             <a
-              href
+              href="https://www.figma.com/proto/SrDJoUah3HnV1zQxd36Mc6/EmployeeScape---Marketing-Website?page-id=75%3A372&node-id=75%3A373&viewport=241%2C48%2C0.15&scaling=scale-down"
               rel="noreferrer"
               target="_blank"
               className="app-design-detail-btn general"
@@ -1232,6 +1232,97 @@ function EmployeeScape() {
             </a>
           </li>
         </ul>
+      </Fade>
+      <Fade bottom duration={1000} distance="40px">
+        <div className="app-design-header">Going Forward</div>
+        <div className="sub-title">
+          <span>Next Step</span> for EmployeeScape
+        </div>
+        <div className="app-design-detail-text">
+          This is just the begining and there is more to expand in
+          EmployeeScape. I would take the below listed as my next steps in
+          moving forward with the case study.
+        </div>
+        <div className="app-design-detail-text">
+          <ul>
+            <li>
+              Conduct user testing with Hi-Fi Prototype and implement changes
+              for better user experience.
+            </li>
+            <li>
+              I really want to expand my designing horizon and challenge myself
+              to desgin the same product on a different platform. I am aiming
+              towards working on this moving forward.
+            </li>
+            <li>
+              Also I would like to use the “Tarot cards of tech” by artefact to
+              explore design impact for EmployeeScape. And develop the
+              application from different aspects.
+            </li>
+            <li>
+              Finally, work towards going live with EmployeeScape. This is going
+              to be a long process and I would definately want to work on
+              developing this solution further.
+            </li>
+          </ul>
+        </div>
+        <div className="sub-title">
+          <span>Key Learnings</span> from the Case Study
+        </div>
+        <div className="app-design-detail-text">
+          The Design thinking process has overall been a rewarding one. It
+          taught me new skills and at the same time challenged me to work
+          better. Some of the vital points I learnt are :
+        </div>
+        <div className="app-design-detail-text">
+          <ul>
+            <li>
+              Talking to users was easy but listening to users was the important
+              aspect. And that determined most of the design journey.
+            </li>
+            <li>
+              I understood the basic concept of designing for the user and not
+              for myself.
+            </li>
+            <li>
+              I focused more on different perspectives rather than just focusing
+              on my vision for EmployeeScape.
+            </li>
+            <li>
+              I pivoted at each step depending on the valueable feedback I
+              received from users.
+            </li>
+            <li>
+              Being open and positive towards ambiguity. And as BrainStation
+              taught me embrassing it as well.
+            </li>
+            <li>
+              There was no definate solution at any point. Hence, I had to be
+              focused towards problem solving process rather than chasing the
+              solution in my head.
+            </li>
+          </ul>
+        </div>
+      </Fade>
+      <Fade bottom duration={1000} distance="40px">
+        <div className="app-design-header">Final Thoughts!</div>
+        <div className="app-design-detail-text">
+          The entire process of developing this case study has been a journey of
+          its own. I truly enjoyed working on a problem space I personally
+          believe in. It became challenging at the same time as I worked hard in
+          avoiding my opnions to influence my design. I had to keep reminding
+          myself to think only for the user and listen only to the user.
+        </div>
+        <div className="app-design-detail-text">
+          I really appreciate you taking the time to go through my case study.
+          <br />
+          Thank you! Would you like to see more of my projects ?
+        </div>
+        <div className="about-cont-btn marginDown">
+          <a href="/ux-design" className="about-btn">
+            UX Design
+          </a>
+        </div>
       </Fade>
     </div>
   );
