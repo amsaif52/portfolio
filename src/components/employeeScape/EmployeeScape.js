@@ -97,7 +97,12 @@ function EmployeeScape() {
           </div>
           <div className="app-prototype">
             <img src={Prototype} alt="prototype" />
-            <a href className="app-design-detail-btn">
+            <a
+              href="https://www.figma.com/proto/gmLNVQFgouLCiOvrjYUrRN/CAPSTONE-EMPLOYEESCAPE?page-id=0%3A1&node-id=1%3A4433&viewport=241%2C48%2C0.36&scaling=scale-down&starting-point-node-id=1%3A4433"
+              className="app-design-detail-btn"
+              rel="noreferrer"
+              target="_blank"
+            >
               View Prototype
             </a>
           </div>
@@ -197,6 +202,8 @@ function EmployeeScape() {
           <a
             href="https://docs.google.com/presentation/d/1z7TkI23l2Kkv5ReUnP55SPCLvbTYQfwdqXZRaBnh2LM/edit#slide=id.p"
             className="imageSmall"
+            rel="noreferrer"
+            target="_blank"
           >
             More details on secondary research linked here.
           </a>
@@ -625,7 +632,11 @@ function EmployeeScape() {
           the different aspects of the app.
         </div>
         <div className="app-design-detail-text">
-          <a href="https://projects.invisionapp.com/boards/HT434TMFV24/">
+          <a
+            href="https://projects.invisionapp.com/boards/HT434TMFV24/"
+            rel="noreferrer"
+            target="_blank"
+          >
             Click here to view the UI Inspiration Board.
           </a>
         </div>
@@ -665,6 +676,8 @@ function EmployeeScape() {
         <a
           href="https://www.figma.com/proto/pIPC8B5NxS25JeZ9puJAK5/EmployeeScape-V1?page-id=0%3A1&node-id=2%3A1534&viewport=241%2C48%2C0.32&scaling=scale-down&starting-point-node-id=2%3A1534"
           className="app-design-detail-btn general"
+          rel="noreferrer"
+          target="_blank"
         >
           View Prototype V1
         </a>
@@ -870,7 +883,12 @@ function EmployeeScape() {
         </div>
         <img src={Proto1} alt="frame" className="img-key-points" />
         <img src={Proto2} alt="frame" className="img-key-points" />
-        <a href className="app-design-detail-btn general">
+        <a
+          href
+          className="app-design-detail-btn general"
+          rel="noreferrer"
+          target="_blank"
+        >
           View Prototype V3
         </a>
       </Fade>
