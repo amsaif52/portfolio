@@ -294,10 +294,10 @@ const About = () => {
             with you, so don’t feel shy and say hi! Would love to catch up,
             personally or virtually!
           </div>
-          <div className="about-text highMargin" style={{ textAlign: "right" }}>
+          <div className="about-text highMargin" style={{ textAlign: "left" }}>
             Designed by Yakuta Izzy
             <br />
-            Developed by Ali Asgar Merchant.
+            Developed by Ali Asgar Merchant
           </div>
         </div>
       </Fade>
