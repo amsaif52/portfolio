@@ -3,19 +3,73 @@ import Facebook from "../assets/Facebook";
 import Instagram from "../assets/Instagram";
 import Plane from "../../assets/plane.png";
 import { Fade } from "react-reveal";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 const About = () => {
-  const [startScroll, setStartScroll] = useState(false);
+  const [isScorllPlane, setIsScrollPlane] = useState(false);
+  const [startScroll, setStartScroll] = useState(null);
   const inputRef = useRef();
-  const handleScroll = () => {
-    const planeOffsetTop = inputRef?.current?.offsetTop;
-    if (window.pageYOffset > planeOffsetTop) {
-      setStartScroll(true);
-    } else {
-      setStartScroll(false);
-    }
-  };
-  window.addEventListener("scroll", handleScroll);
+  const inputPlaneRef = useRef();
+  useEffect(() => {
+    const handleScroll = () => {
+      const planeOffsetTop = inputRef?.current?.offsetTop;
+      const planeOffsetTopHeight = inputRef?.current?.offsetHeight;
+      if (window.pageYOffset > planeOffsetTop) {
+        setIsScrollPlane(true);
+        setStartScroll(null);
+        if (
+          window.pageYOffset >
+          planeOffsetTop +
+            planeOffsetTopHeight -
+            inputPlaneRef?.current?.offsetHeight
+        ) {
+          setStartScroll({
+            position: "absolute",
+            top: planeOffsetTopHeight - inputPlaneRef?.current?.offsetHeight,
+          });
+          return;
+        }
+      } else {
+        setIsScrollPlane(false);
+        setStartScroll(null);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  // const handleScroll = () => {
+  //   const planeOffsetTop = inputRef?.current?.offsetTop;
+  //   const planeOffsetTopHeight = inputRef?.current?.offsetHeight;
+  //   if (window.pageYOffset > planeOffsetTop) {
+  //     setIsScrollPlane(true);
+  //     if (
+  //       window.pageYOffset >
+  //       planeOffsetTop +
+  //         planeOffsetTopHeight -
+  //         inputPlaneRef?.current?.offsetHeight
+  //     ) {
+  //       setStartScroll({
+  //         postion: "absolute",
+  //         top:
+  //           planeOffsetTop +
+  //           planeOffsetTopHeight -
+  //           inputPlaneRef?.current?.offsetHeight,
+  //       });
+  //       return;
+  //     }
+  //     setStartScroll({
+  //       postion: "fixed",
+  //       top: 0,
+  //     });
+  //   } else {
+  //     setStartScroll({
+  //       postion: "absolute",
+  //       top: 0,
+  //     });
+  //   }
+  // };
+  // window.addEventListener("scroll", handleScroll);
   return (
     <>
       <Fade bottom duration={1000} distance="40px">
@@ -185,11 +239,18 @@ const About = () => {
         </div>
       </Fade>
       <div
-        className={startScroll ? "plane-animation active" : "plane-animation"}
+        className={isScorllPlane ? "plane-animation active" : "plane-animation"}
         ref={inputRef}
       >
         <div className="holder">
-          <img src={Plane} alt="plane" className="plane" />
+          <div className="planeContainer" style={startScroll}>
+            <img
+              src={Plane}
+              alt="plane"
+              className="plane"
+              ref={inputPlaneRef}
+            />
+          </div>
           <div>
             <div className="plane-balloon">
               <div className="title">Emirates Airlines</div>
