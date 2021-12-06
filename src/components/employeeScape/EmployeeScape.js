@@ -30,6 +30,9 @@ import Sig from "../../assets/sig.jpg";
 import ColorInjection from "../../assets/colorInjection.jpg";
 import EmployeeScapeImage2 from "../../assets/employeeSign.jpg";
 import Family from "../../assets/family.jpg";
+import Designv3 from "../../assets/designv3.jpg";
+import Desktopv3 from "../../assets/desktopV3.png";
+import Mobilev3 from "../../assets/mobileV3.png";
 import PrototypeVideo from "../../assets/Prototype.m4v";
 import { Player, ControlBar } from "video-react";
 import { Fade } from "react-reveal";
@@ -550,7 +553,12 @@ function EmployeeScape() {
         <div className="sub-title">
           Based on the above user stories, we created our <span>Task Flow</span>
         </div>
-        <img src={TaskFlow} alt="frame" className="img-key-points" />
+        <img
+          src={TaskFlow}
+          alt="frame"
+          className="img-key-points"
+          style={{ maxWidth: "989px" }}
+        />
       </Fade>
       <Fade bottom duration={1000} distance="40px">
         <div className="app-design-header">
@@ -663,13 +671,28 @@ function EmployeeScape() {
           Below are few of the explanatory sketches I did for the above task
           flow.
         </div>
-        <img src={Sketch} alt="frame" className="img-key-points" />
+        <img
+          src={Sketch}
+          alt="frame"
+          className="img-key-points"
+          style={{ maxWidth: "1048px" }}
+        />
         <div className="sub-title">
           And after sketching many more layouts, we decided on the below{" "}
           <span>Solution Sketches</span>
         </div>
-        <img src={Sketch1} alt="frame" className="img-key-points" />
-        <img src={Sketch2} alt="frame" className="img-key-points" />
+        <img
+          src={Sketch1}
+          alt="frame"
+          className="img-key-points"
+          style={{ maxWidth: "870px" }}
+        />
+        <img
+          src={Sketch2}
+          alt="frame"
+          className="img-key-points"
+          style={{ maxWidth: "570px" }}
+        />
         <div className="sub-title">
           Once I had my solution sketches in place, I had to translate them into{" "}
           <span>Lo-Fi Prototype</span>
@@ -678,8 +701,18 @@ function EmployeeScape() {
           Considering the User Stories and Task flow built, Prototype V1 was
           created. Below you can view the same for a quick glance.
         </div>
-        <img src={Prototype1} alt="frame" className="img-key-points" />
-        <img src={Prototype2} alt="frame" className="img-key-points" />
+        <img
+          src={Prototype1}
+          alt="frame"
+          className="img-key-points"
+          style={{ maxWidth: "890px" }}
+        />
+        <img
+          src={Prototype2}
+          alt="frame"
+          className="img-key-points"
+          style={{ maxWidth: "890px" }}
+        />
         <a
           href="https://www.figma.com/proto/pIPC8B5NxS25JeZ9puJAK5/EmployeeScape-V1?page-id=0%3A1&node-id=2%3A1534&viewport=241%2C48%2C0.32&scaling=scale-down&starting-point-node-id=2%3A1534"
           className="app-design-detail-btn general"
@@ -1094,7 +1127,7 @@ function EmployeeScape() {
           And lastly, I developed{" "}
           <span className="big">the Hi-Fi Prototype.</span>
         </div>
-        <div className="app-prototype">
+        <div className="app-prototype marginBtm">
           <div>
             <Player autoPlay src={PrototypeVideo}>
               <ControlBar autoHide={false} disableDefaultControls={true} />
@@ -1109,6 +1142,96 @@ function EmployeeScape() {
             View Prototype
           </a>
         </div>
+        <div className="sub-title">
+          <span>Key features</span> that EmployeeScape has to offer as per the
+          Hi-Fi Prototype.
+        </div>
+        <div className="app-design-detail-text">
+          <ul>
+            <li>
+              Users can log into EmployeeScape only once they are hired by the
+              organization.
+            </li>
+            <li>
+              Users can get an overall understanding of the organization right
+              from the Home Screen.
+            </li>
+            <li>
+              The home screen is designed in such a way that the day to day
+              functions are on the second half of the arc which makes accessing
+              those prime feature very easy, like Schedule, Training, Time Off,
+              Benefits and Directory.
+            </li>
+            <li>
+              Next with EmployeeScape, user can easily see their work schedule
+              and plan their time effeciently
+            </li>
+            <li>
+              It also helps user prepare for the meetings and analyize the
+              important documents attached to that particular meeting.
+            </li>
+            <li>
+              EmployeeScape can help them get to know the team better. They can
+              view each colleagues profile and understand their journey. This
+              aspect will help them easily conversate with the colleagues the
+              next time they meet them.
+            </li>
+            <li>
+              Also helps in understanding team hierarchy and encourages an open
+              platform which is very approachable.
+            </li>
+          </ul>
+        </div>
+        <img src={Designv3} alt="frame" className="img-key-points" />
+        <div className="app-design-detail-text">
+          After which I developed the{" "}
+          <span>Product Marketing Responsive Web Challenge</span>
+        </div>
+        <div className="app-design-detail-text">
+          To further promote and market EmployeeScape to potential clients, I
+          developed a product marketing responsive webpage for both desktop and
+          mobile viewports. The goal of the website was to educate potential
+          organziations about EmployeeScape and its functionalities. The website
+          outlines benefits of the application by showcasing current users,
+          testimonials and top features.
+        </div>
+        <div className="app-design-detail-text">
+          EmployeeScape is not an app anyone can just download and sign up. It
+          needs to be bought by an organization and then deloyed to their
+          employees accordingly.
+          <br />
+          Hence, the CTA on the website is to Request a demo or download the
+          application for a quick tour.
+        </div>
+        <div className="app-design-detail-text">
+          The website is designed keeping the professional tone in mind. It is
+          kept to the point and inviting organizations to request a demo to
+          learn more.
+        </div>
+        <ul className="app-design-distribution">
+          <li>
+            <img src={Desktopv3} alt="desktop" />
+            <a
+              href
+              rel="noreferrer"
+              target="_blank"
+              className="app-design-detail-btn general"
+            >
+              View Desktop
+            </a>
+          </li>
+          <li className="marginLeft">
+            <img src={Mobilev3} alt="mobile" className="mobile" />
+            <a
+              href
+              rel="noreferrer"
+              target="_blank"
+              className="app-design-detail-btn general"
+            >
+              View Mobile
+            </a>
+          </li>
+        </ul>
       </Fade>
     </div>
   );
