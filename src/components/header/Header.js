@@ -63,16 +63,9 @@ function Header() {
             </NavLink>
           </li>
           <li className="app-menu-item btn">
-            <NavLink
-              to="/contact-us"
-              className={(navData) =>
-                navData.isActive
-                  ? "app-menu-text app-menu-active"
-                  : "app-menu-text"
-              }
-            >
+            <a href="mailto:yakutaizzy.com" className={"app-menu-text"}>
               Say Hi!
-            </NavLink>
+            </a>
           </li>
         </ul>
       </div>
