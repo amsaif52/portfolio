@@ -1,9 +1,21 @@
 import Linkedin from "../assets/Linkedin";
 import Facebook from "../assets/Facebook";
 import Instagram from "../assets/Instagram";
-// import Plane from "../../assets/plane.png";
+import Plane from "../../assets/plane.png";
 import { Fade } from "react-reveal";
+import { useState, useRef } from "react";
 const About = () => {
+  const [startScroll, setStartScroll] = useState(false);
+  const inputRef = useRef();
+  const handleScroll = () => {
+    const planeOffsetTop = inputRef?.current?.offsetTop;
+    if (window.pageYOffset > planeOffsetTop) {
+      setStartScroll(true);
+    } else {
+      setStartScroll(false);
+    }
+  };
+  window.addEventListener("scroll", handleScroll);
   return (
     <>
       <Fade bottom duration={1000} distance="40px">
@@ -171,8 +183,11 @@ const About = () => {
             different Airlines.
           </div>
         </div>
-        {/* </Fade>
-      <div className="plane-animation">
+      </Fade>
+      <div
+        className={startScroll ? "plane-animation active" : "plane-animation"}
+        ref={inputRef}
+      >
         <div className="holder">
           <img src={Plane} alt="plane" className="plane" />
           <div>
@@ -210,7 +225,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Fade bottom duration={1000} distance="40px"> */}
+      <Fade bottom duration={1000} distance="40px">
         <div className="about-container noBottom">
           <div className="about-text">
             And that’s all about me for now. Thank you so much for taking the
