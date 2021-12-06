@@ -8,7 +8,13 @@ function Footer() {
       <div>
         <div className="app-footer-copyright">
           Copyright 2021 | Yakuta Izzy |{" "}
-          <a href="mailto:yakuta.izzy@gmail.com">yakuta.izzy@gmail.com</a>
+          <a
+            href="mailto:yakuta.izzy@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            yakuta.izzy@gmail.com
+          </a>
         </div>
         <ul className="app-footer-social">
           <li>

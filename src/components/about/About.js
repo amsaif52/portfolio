@@ -91,7 +91,12 @@ const About = () => {
             <a href="/ux-design" className="about-btn">
               UX Design
             </a>
-            <a href="mailto:yakutaizzy@gmail.com" className="about-btn">
+            <a
+              href="mailto:yakutaizzy@gmail.com"
+              className="about-btn"
+              target="_blank"
+              rel="noreferrer"
+            >
               Say Hi
             </a>
           </div>
@@ -126,13 +131,18 @@ const About = () => {
           <div className="about-cont-btn">
             <a
               href="https://www.instagram.com/qartsbyyakuta/"
-              target="_blank"
               className="about-btn"
+              target="_blank"
               rel="noreferrer"
             >
               Q-Arts
             </a>
-            <a href="mailto:yakutaizzy@gmail.com" className="about-btn">
+            <a
+              href="mailto:yakutaizzy@gmail.com"
+              className="about-btn"
+              target="_blank"
+              rel="noreferrer"
+            >
               Say Hi
             </a>
           </div>
@@ -168,21 +178,25 @@ const About = () => {
               </div>
             </div>
             <div className="plane-balloon">
-              <div className="title">Emirates Airlines</div>
+              <div className="title">National Airlines </div>
               <div className="sub-title">
-                I started my career with Emirates and worked with them as a
-                Travel Counsltant. I loved planning travel itnearies for people
-                and was awarded employee of the month multiple times for
-                achieving high sales and offering exceptional customer service.
+                Next I joined National as a Flights Coordinator and slowly
+                worked my way up to an Aircraft Dispatcher. I worked multiple
+                different roles with this small airline. And gather rich
+                experience of working in an adhoc operatinal set up. I also
+                found and managed the Cost Control Department of the airline and
+                had achieved over 5% reduction in overall flight operation
+                costs.
               </div>
             </div>
             <div className="plane-balloon">
-              <div className="title">Emirates Airlines</div>
+              <div className="title">Air Canada</div>
               <div className="sub-title">
-                I started my career with Emirates and worked with them as a
-                Travel Counsltant. I loved planning travel itnearies for people
-                and was awarded employee of the month multiple times for
-                achieving high sales and offering exceptional customer service.
+                And my last employer was Air Canada and I worked there as a
+                Training Associate. I planned and organized intial pilot
+                training and also managed training plans for all pilots on B787
+                as well as for Embraer fleet. I absouletly enjoyed my work here
+                and was exposed to a completely new aspect of the airline.
               </div>
             </div>
           </div>

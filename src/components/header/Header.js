@@ -63,7 +63,12 @@ function Header() {
             </NavLink>
           </li>
           <li className="app-menu-item btn">
-            <a href="mailto:yakutaizzy.com" className={"app-menu-text"}>
+            <a
+              href="mailto:yakutaizzy.com"
+              className="app-menu-text"
+              target="_blank"
+              rel="noreferrer"
+            >
               Say Hi!
             </a>
           </li>
