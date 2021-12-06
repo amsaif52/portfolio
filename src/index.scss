@@ -373,6 +373,10 @@ $white: #fff;
           flex-direction: column;
           width: 100%;
         }
+        @media screen and (max-width: 800px) {
+          font-size: 18px;
+          line-height: 20px;
+        }
       }
     }
     > div:last-child {
@@ -404,6 +408,9 @@ $white: #fff;
     }
     @media screen and (max-width: 1060px) {
       font-size: 25px;
+    }
+    @media screen and (max-width: 800px) {
+      font-size: 20px;
     }
   }
 }
@@ -542,6 +549,10 @@ $white: #fff;
   text-decoration: none;
   display: inline-block;
   filter: drop-shadow(0px 4px 4px #4a306d);
+  @media screen and (max-width: 800px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 .app-design-detail-btn {
   background: #ff9179;
@@ -698,12 +709,15 @@ $white: #fff;
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      flex-wrap: wrap;
+      @media screen and (max-width: 1000px) {
+        flex-direction: column;
+      }
       > div {
         flex: 0 1 50%;
         margin-right: 15px;
         @media screen and (max-width: 1000px) {
           flex: 1 1 100%;
+          margin-right: 0;
         }
       }
       > img {
@@ -712,6 +726,7 @@ $white: #fff;
         position: relative;
         @media screen and (max-width: 1000px) {
           flex: 1 1 100%;
+          width: 100%;
         }
       }
     }
@@ -1021,6 +1036,10 @@ table.second {
     font-weight: 400;
     color: $primary;
     margin-bottom: 40px;
+    @media screen and (max-width: 800px) {
+      font-size: 30px;
+      line-height: 35px;
+    }
   }
   .about-text {
     font-size: 24px;
@@ -1033,6 +1052,10 @@ table.second {
       margin-bottom: 0;
       text-align: center;
     }
+    @media screen and (max-width: 800px) {
+      font-size: 18px;
+      line-height: 20px;
+    }
   }
   .about-list {
     font-size: 24px;
@@ -1041,6 +1064,10 @@ table.second {
     color: $primary;
     padding-left: 20px;
     margin: 0 0 20px;
+    @media screen and (max-width: 800px) {
+      font-size: 18px;
+      line-height: 20px;
+    }
   }
   .about-cont-btn {
     display: flex;
@@ -1073,9 +1100,18 @@ table.second {
     + .about-btn {
       margin-left: 50px;
     }
+    @media screen and (max-width: 800px) {
+      font-size: 24px;
+      line-height: 36px;
+      max-width: 100px;
+      text-align: center;
+    }
   }
   &.noBottom {
     margin-bottom: 0;
+  }
+  @media screen and (max-width: 800px) {
+    margin: 30px 0;
   }
 }
 .app-about-header {
@@ -1096,6 +1132,9 @@ table.second {
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 35px 0;
   }
 }
 .plane-animation {
@@ -1107,9 +1146,13 @@ table.second {
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    padding: 60px 0;
+    padding: 60px 10px;
     > div {
       flex: 0 1 50%;
+      @media screen and (max-width: 800px) {
+        flex: 1 1 100%;
+        z-index: 2;
+      }
     }
   }
   .plane {
@@ -1117,6 +1160,11 @@ table.second {
     top: 0;
     height: 300px;
     left: 0;
+    @media screen and (max-width: 800px) {
+      right: 0;
+      margin: auto;
+      z-index: 0;
+    }
   }
   .plane-balloon {
     max-width: 800px;
@@ -1131,12 +1179,23 @@ table.second {
       font-weight: 400;
       color: #000;
       margin-bottom: 20px;
+      @media screen and (max-width: 800px) {
+        font-size: 30px;
+        line-height: 35px;
+      }
     }
     .sub-title {
       font-size: 24px;
       line-height: 26px;
       font-weight: 400;
       color: #000;
+      @media screen and (max-width: 800px) {
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+    @media screen and (max-width: 800px) {
+      max-width: 100%;
     }
   }
 }
