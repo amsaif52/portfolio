@@ -445,8 +445,8 @@ $white: #fff;
     }
   }
   .app-define-text {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 20px;
     font-style: normal;
     font-weight: normal;
     margin-bottom: 20px;
@@ -521,10 +521,10 @@ $white: #fff;
       background: rgba(203, 240, 248, 0.15);
       border: 1px solid #02005e;
       border-radius: 10px;
-      font-size: 20px;
-      line-height: 25px;
+      font-size: 18px;
+      line-height: 20px;
       margin-top: 25px;
-      min-height: 324px;
+      min-height: 220px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -636,8 +636,8 @@ $white: #fff;
         text-align: left;
         font-style: normal;
         font-weight: normal;
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 20px;
         color: #02005e;
         @media screen and (max-width: 1000px) {
           font-size: 18px;
@@ -661,8 +661,8 @@ $white: #fff;
       width: 100%;
       font-style: normal;
       font-weight: normal;
-      font-size: 30px;
-      line-height: 38px;
+      font-size: 18px;
+      line-height: 20px;
       color: #02005e;
       padding: 0 10px;
     }
@@ -676,8 +676,8 @@ $white: #fff;
   .sub-title {
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 35px;
     color: #02005e;
     max-width: 1150px;
     margin: 0 auto 30px;
@@ -693,8 +693,8 @@ $white: #fff;
   .app-design-detail-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 20px;
     color: #02005e;
     max-width: 1150px;
     margin: 0 auto 30px;
@@ -705,8 +705,8 @@ $white: #fff;
     > span {
       background-color: #cbf0f8;
       &.big {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 24px;
+        line-height: 30px;
       }
     }
     &.center {
@@ -931,15 +931,15 @@ a.imageSmall {
   }
   .app-design-cont-left {
     > div {
-      font-size: 24px;
-      line-height: 30px;
+      font-size: 18px;
+      line-height: 20px;
       font-weight: 400;
       margin-bottom: 20px;
       color: #02005e;
       span.big {
         background-color: #cbf0f8;
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 24px;
+        line-height: 30px;
       }
       @media screen and (max-width: 1000px) {
         font-size: 18px;
@@ -987,8 +987,8 @@ a.imageSmall {
   }
   .app-design-cont-right {
     > div {
-      font-size: 24px;
-      line-height: 30px;
+      font-size: 18px;
+      line-height: 20px;
       font-weight: 400;
       margin-bottom: 20px;
       color: #02005e;
