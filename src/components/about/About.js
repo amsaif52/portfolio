@@ -2,13 +2,34 @@ import Linkedin from "../assets/Linkedin";
 import Facebook from "../assets/Facebook";
 import Instagram from "../assets/Instagram";
 import Plane from "../../assets/plane.png";
+import Stories from "../../assets/stories.png";
+import CarouselOne from "../../assets/carousel/carousel-one.png";
+import CarouselTwo from "../../assets/carousel/carousel-two.png";
+import CarouselThree from "../../assets/carousel/carousel-three.png";
+import CarouselFour from "../../assets/carousel/carousel-four.png";
+import CarouselFive from "../../assets/carousel/carousel-five.png";
 import { Fade } from "react-reveal";
 import { useState, useRef, useEffect } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 const About = () => {
   const [isScorllPlane, setIsScrollPlane] = useState(false);
   const [startScroll, setStartScroll] = useState(null);
   const inputRef = useRef();
   const inputPlaneRef = useRef();
+  const settings = {
+    dots: false,
+    lazyLoad: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    cssEase: "linear",
+  };
   useEffect(() => {
     const handleScroll = () => {
       const planeOffsetTop = inputRef?.current?.offsetTop;
@@ -100,34 +121,56 @@ const About = () => {
         </div>
         <div className="about-container">
           <div className="about-text">
-            While I was looking for multiple different career options, my
-            husband Ali, introduced me to UX Design. He not only encouraged me
-            to explore the feild but also pushed me towards studying UX Design
-            professionally first. After a couple of months or research and
-            learning all possible aspects of studying UX Design, I finally
-            applied for the Bootcamp Diploma at BrainStation.
-          </div>
-          <div className="about-text">
-            It have been challenaging yet very rewarding to have studied UX
-            design through such an intense diploma program and that too
-            virtually. But I am very greatful to have completed it successfully.
-            I have learnt so much in the last three months and would love to
-            explore more in the years to come.
-          </div>
-          <div className="about-text">
-            The different skills I have acquired in the last few months are -
+            While I was looking for different career options, my husband Ali,
+            introduced me to UX Design. He not only encouraged me to explore the
+            feild but also pushed me towards studying UX Design professionally.
             <br />
-            Research & Strategy | Information Architecture | Wireframing &
-            Protoyping | Usabilty Testing | Design Thinking | Project Management
+            After a couple of months of research and learning the various
+            aspects of studying UX Design, I applied for the Bootcamp Diploma at
+            BrainStation.
           </div>
-          <div className="about-text">
-            The different platforms I know are -<br /> Figma | Sketch | InVision
-            | Photoshop | Canva | Google Workspace | Microsoft Office
+          <div className="about-twin-container">
+            <div className="about-twin-left-container">
+              <div className="about-text">
+                It has been quite challenging yet very rewarding to have studied
+                UX design through such an intense diploma program and that too
+                virtually. But I am very grateful to have completed it
+                successfully. With a mix of experience and knowledge, I begin
+                this new journey as a UX Designer.
+              </div>
+              <div className="about-text">
+                The different skills I have acquired in the last few months are
+                -
+              </div>
+              <ul className="about-list">
+                <li>Research & Strategy</li>
+                <li>Information Architecture</li>
+                <li>Wireframing & Prototyping</li>
+                <li>Usability Testing</li>
+                <li>Design Thinking</li>
+                <li>Project Management</li>
+              </ul>
+              <div className="about-text">
+                The different platforms I know are -
+              </div>
+              <ul className="about-list">
+                <li>Figma</li>
+                <li>Sketch</li>
+                <li>InVision</li>
+                <li>Photoshop</li>
+                <li>Canva</li>
+                <li>Google Workspace</li>
+                <li>Microsoft Office</li>
+              </ul>
+            </div>
+            <div className="about-twin-right-container">
+              <img src={Stories} alt="Stories" className="Stories" />
+            </div>
           </div>
           <div className="about-text">
             I am currently open for work, so please make sure to check out my UX
-            Design section or contact me if you’re interested in working with
-            me.
+            Design section. You can also contact me if you’re interested in
+            working with me.
           </div>
           <div className="about-cont-btn">
             <a href="/ux-design" className="about-btn">
@@ -153,19 +196,37 @@ const About = () => {
             It all started as a hobby... As a child I was really interested in
             Calligraphy and would always admire large Arabic Calligraphy
             paintings. I did very small scale projects and would paint only for
-            family and friends. Unitl one day, I was given an opportunity to
+            family and friends. Until one day, I was given an opportunity to
             commission a few Arabic Calligraphy paintings for a house in Canada.
             I started off by these rare opportunities and slowly turned it into
             a side hustle. I named Q-Arts after my son Qumail’s name as it ony
             successfully took off after he was born and I had a few hours to
             myself.
           </div>
-          <div className="about-text">
-            I do commissioned Arabic Calligraphy Paintings | Customized Baby
-            Milestone Boards and Cards | Customized name boards for bedroom
-            decor |<br />
-            Customized Printed T-Shirts | Lots more!
-          </div>
+          <Slider {...settings} className="about-carousel">
+            <div className="about-item">
+              <img src={CarouselOne} alt="carousel one" />
+            </div>
+            <div className="about-item">
+              <img src={CarouselTwo} alt="carousel two" />
+            </div>
+            <div className="about-item">
+              <img src={CarouselThree} alt="carousel three" />
+            </div>
+            <div className="about-item">
+              <img src={CarouselFour} alt="carousel four" />
+            </div>
+            <div className="about-item">
+              <img src={CarouselFive} alt="carousel five" />
+            </div>
+          </Slider>
+          <div className="about-text">I do commissioned -</div>
+          <ul className="about-list">
+            <li>Arabic Calligraphy Paintings</li>
+            <li>Customized Baby Milestone Boards and Cards</li>
+            <li>Customized name boards for bedroom decor</li>
+            <li>Customized Printed T-Shirts and lots more!</li>
+          </ul>
           <div className="about-text">
             If you wish to see more of my work and would like to connect with
             me, please check out my Q-Arts.
@@ -200,7 +261,7 @@ const About = () => {
             years and there was no looking back since.
           </div>
           <div className="about-text">
-            I grew in the industry and throughly enjoyed all the exposure I
+            I grew in the industry and thoroughly enjoyed all the exposure I
             gained working through all the different roles I played with
             different Airlines.
           </div>
@@ -224,8 +285,8 @@ const About = () => {
               <div className="title">Emirates Airlines</div>
               <div className="sub-title">
                 I started my career with Emirates and worked with them as a
-                Travel Counsltant. I loved planning travel itnearies for people
-                and was awarded employee of the month multiple times for
+                Travel Consultant. I loved planning travel itineraries for
+                people and was awarded employee of the month multiple times for
                 achieving high sales and offering exceptional customer service.
               </div>
             </div>
@@ -235,7 +296,7 @@ const About = () => {
                 Next I joined National as a Flights Coordinator and slowly
                 worked my way up to an Aircraft Dispatcher. I worked multiple
                 different roles with this small airline. And gather rich
-                experience of working in an adhoc operatinal set up. I also
+                experience of working in an adhoc operational set up. I also
                 found and managed the Cost Control Department of the airline and
                 had achieved over 5% reduction in overall flight operation
                 costs.
@@ -245,9 +306,9 @@ const About = () => {
               <div className="title">Air Canada</div>
               <div className="sub-title">
                 And my last employer was Air Canada and I worked there as a
-                Training Associate. I planned and organized intial pilot
+                Training Associate. I planned and organized initial pilot
                 training and also managed training plans for all pilots on B787
-                as well as for Embraer fleet. I absouletly enjoyed my work here
+                as well as for Embraer fleet. I absolutely enjoyed my work here
                 and was exposed to a completely new aspect of the airline.
               </div>
             </div>
